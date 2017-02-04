@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div custom-layout ng-controller="aboutController">
+    <!-- About YiSport -->
+    <div class="container-fluid">
+      <h1 style="text-align: center; padding-bottom: 50px;">About Yi Sport Taekwondo</h1>
+      <div class="row">
+        <div
+          {% if g.user.is_authenticated %}
+            edit-field tag="text" title="about" model="aboutYiSport"
+          {% endif %}>
+          <p ng-bind="aboutYiSport"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lionel Lee -->
+    <div class="container-fluid">
+      {% include 'about/lionelLee.html' %}
+    </div>
+
+    <!-- Sara Gray -->
+    <div class="container-fluid">
+      {% include 'about/saraGray.html' %}
+    </div>
+
+    <!-- Khalil Butler -->
+    <div class="container-fluid">
+      {% include 'about/khalilButler.html' %}
+    </div>
+
+    <!-- Isaak Boyance -->
+    <div class="container-fluid">
+      {% include 'about/isaakBoyance.html' %}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="newWokeApp">
+<head lang="en">
+
+  <title>Welcome | New Woke</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/directives/layoutDirective.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/controllers/indexController.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/modules/newWokeAppModule.js') }}"></script>
+
+  <link rel="stylesheet "type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<!-- http://www.colorcombos.com/color-schemes/14/ColorCombo14.html -->
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="150"><!-- style="background-color: #8000ff; color:white">-->
+
+  <script>
+//    var followLink = function (location) {
+//      window.location = location;
+//      $('#myNavbar a').removeClass('active');
+//      $('#' + location + 'Nav').addClass('active');
+//    }
+  </script>
+
+{% block content %} {% endblock %}
+
+<footer style="background-color: #fff; color:black">
+  Created by <a href="https://www.linkedin.com/in/calinwashington/">Calin Washington</a>. |
+
+</footer>
+</body>
+</html>

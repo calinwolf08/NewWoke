@@ -1,0 +1,12 @@
+<span class="icon glyphicon glyphicon-cog" ng-click="loadPopupData()"></span>
+
+<div ng-if="textField">{% include 'directives/editFieldText.html' %}</div>
+
+<div ng-if="testemonialField">{% include 'directives/editFieldTestemonial.html' %}</div>
+
+<div ng-if="imageField">{% include 'directives/editFieldImage.html' %}</div>
+
+<div ng-if="slideshowField">{% include 'directives/editFieldSlideshow.html' %}</div>
+
+<ng-transclude></ng-transclude>
+

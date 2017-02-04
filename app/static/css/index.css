@@ -1,0 +1,64 @@
+.jumbotron {
+    margin-bottom: 0;
+    background-size: cover;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    color: #8C489F;
+    text-align: center;
+}
+
+.banner_inner_container {
+    margin:0 auto;
+    display: inline-block;
+    padding:1%;
+    border-radius: 5px;
+    background-color: rgba(230, 230, 230, 0.4);
+}
+
+.banner_inner_container p {
+    color: #000000;
+}
+
+.banner_title {
+    text-align: center;
+    color: #262626;
+    font-size: 7em;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+    letter-spacing: 4px;
+}
+
+.bio_pic {
+    width:75%;
+}
+
+.bio_text {
+    font-size: 1.5em;
+    white-space: pre-line;
+}
+
+.container-fluid {
+    color: #e6e6e6;
+    margin: 1%;
+}
+
+h1 {
+    letter-spacing: 12px;
+    text-align: center;
+}
+
+li a {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.nav-pills > li.active > a{
+    background-color: #062f4f;
+}
+
+.nav-pills > li.active > a:focus{
+    background-color: #062f4f;
+}
+
+.nav-pills > li.active > a:hover{
+    background-color: #062f4f;
+}

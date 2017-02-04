@@ -1,0 +1,29 @@
+<h1 align="center">Testemonials</h1>
+<div class="row" style="margin-top: 50px">
+  <div
+    {% if g.user.is_authenticated %}
+      edit-field tag="testemonial" title="testemonial" model="testemonialOne.text" author="testemonialOne.author"
+    {% endif %}
+    class="col-sm-4">
+    <p ng-bind="testemonialOne.text"></p>
+    <p>- {% raw %}{{ testemonialOne.author }}{% endraw %}</p>
+  </div>
+
+  <div
+    {% if g.user.is_authenticated %}
+      edit-field tag="testemonial" title="testemonial" model="testemonialTwo.text" author="testemonialTwo.author"
+    {% endif %}
+    class="col-sm-4">
+    <p ng-bind="testemonialTwo.text"> </p>
+    <p>- {% raw %}{{ testemonialTwo.author }}{% endraw %}</p>
+  </div>
+
+  <div
+    {% if g.user.is_authenticated %}
+      edit-field tag="testemonial" title="testemonial" model="testemonialThree.text" author="testemonialThree.author"
+    {% endif %}
+    class="col-sm-4">
+    <p ng-bind="testemonialThree.text"></p>
+    <p>- {% raw %}{{ testemonialThree.author }}{% endraw %}</p>
+  </div>
+</div>
