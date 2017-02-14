@@ -27,11 +27,19 @@
     letter-spacing: 4px;
 }
 
-.bio_pic {
-    width:75%;
+.bio_pic_container {
+    padding: 2%;
 }
 
-.bio_text {
+.bio_pic_container img {
+    width:100%;
+}
+
+.bio_text_container {
+    padding: 2%;
+}
+
+.bio_text_container p {
     font-size: 1.5em;
     white-space: pre-line;
 }
@@ -46,19 +54,28 @@ h1 {
     text-align: center;
 }
 
+h1 a {
+    letter-spacing: 12px;
+    text-align: center;
+}
+
 li a {
     font-size: 1.5em;
     color: #ffffff;
 }
 
-.nav-pills > li.active > a{
-    background-color: #062f4f;
+.pre-scrollable {
+    max-height: 500px;
 }
 
-.nav-pills > li.active > a:focus{
-    background-color: #062f4f;
-}
+/*.nav-tabs > li.active > a{*/
+    /*background-color: #062f4f;*/
+/*}*/
 
-.nav-pills > li.active > a:hover{
-    background-color: #062f4f;
-}
+/*.nav-tabs > li.active > a:focus{*/
+    /*background-color: #062f4f;*/
+/*}*/
+
+/*.nav-tabs > li.active > a:hover{*/
+    /*background-color: #062f4f;*/
+/*}*/

@@ -4,13 +4,28 @@
 function indexController($scope) {
 
     $scope.bannerImg = "static/images/sun.jpg";
+
     $scope.mahdi_name = "Barwick Mahdi";
+    $scope.mahdi_pic = "static/images/sun.jpg";
     $scope.mahdi_bio = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah";
     $scope.dustin_name = "Dustin Washington";
+    $scope.dustin_pic = "static/images/sun.jpg";
     $scope.dustin_bio = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah";
     $scope.martin_name = "Martin Freidman";
-    $scope.martin_bio = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah";
+    $scope.martin_pic = "static/images/Martin_Freidman.jpg";
+    $scope.martin_bio = "Martin is a life coach, story teller and antiracist organizer." +
+        " He is a core trainer and organizer with the People’s Institute for Survival and Beyond." +
+        "  Martin has worked as a college preparatory counselor and in the field of prison reentry" +
+        " and family reunification.  He has also been a 15 year volunteer at Monroe Correctional Complex" +
+        " with the Black Prisoner’s Caucus.  Martin was a cofounder of the People’s Institute Northwest, " +
+        "The City of Seattle Undoing Institutional Racism Group, the Coalition of Antiracist Whites (CARW)" +
+        " and Seattle European Dissent.   He is currently working with antiracist white folks around the" +
+        " country on what it means to move from being an ally to being an abolitionist.   With a focus on" +
+        " healing from the internalized racial superiority (IRS) of white people and the challenges IRS brings" +
+        " to white antiracist organizing.   Martin is also organizing with Jewish people (both white and of color)" +
+        " to work to separate out Jewishness from whiteness.  He currently resides in the Cleveland Ohio area.";
     $scope.felicia_name = "Felicia Lane Savage";
+    $scope.felicia_pic = "static/images/Felicia_Lane_Savage.jpg";
     $scope.felicia_bio = "For over 27 years, Felicia continues to joyfully practice Raja Yoga, which encompasses" +
         "all aspects of her life: movement, breathing, moderation, self-study, concentration, stillness, and" +
         " self-realization through an intimate reflective practice. \n\nFelicia has taught “Felicia Fusion” through" +
@@ -31,26 +46,33 @@ function indexController($scope) {
         " as Humans. Felicia will continue to provide Integrative yoga-based movement sessions, Integrative" +
         " Self-care intensives, and 200-hour Registered Raja Yoga Teacher Trainings as a New Woke Guide. ";
 
-    $scope.current_bio_pic = "bio pic link";
+    $scope.current_bio_pic = "";
+    $scope.current_bio_text = "";
+    $scope.current_bio_name = "";
 
-    $scope.setBioPic = function (id) {
+    $scope.setCurrentBio = function (id) {
         switch (id) {
             case 0: //mahdi
-                $scope.current_bio_pic = "static/images/sun.jpg";
+                $scope.current_bio_pic = angular.copy($scope.mahdi_pic);
+                $scope.current_bio_text = angular.copy($scope.mahdi_bio);
                 break;
             case 1: //dustin
-                $scope.current_bio_pic = "static/images/sun.jpg";
+                $scope.current_bio_pic = angular.copy($scope.dustin_pic);
+                $scope.current_bio_text = angular.copy($scope.dustin_bio);
                 break;
             case 2: //felicia
-                $scope.current_bio_pic = "static/images/Felicia_Lane_Savage.jpg";
+                $scope.current_bio_pic = angular.copy($scope.martin_pic);
+                $scope.current_bio_text = angular.copy($scope.martin_bio);
                 break;
             case 3: //martin
-                $scope.current_bio_pic = "static/images/sun.jpg";
+                $scope.current_bio_pic = angular.copy($scope.felicia_pic);
+                $scope.current_bio_text = angular.copy($scope.felicia_bio);
                 break;
             default:
-                $scope.current_bio_pic = "default pic";
                 break;
         }
+
+        return "#bio";
     }
 
 }

@@ -31,44 +31,38 @@
 
         <div class="container-fluid">
             <div class="row container-fluid">
-                <h1 class="meet-us-header">MEET US</h1>
+                <h1 data-toggle="tab" href="#about" class="meet-us-header">The Team</h1>
             </div>
-            <div class="row">
-                <div class="members-tabs container-fluid">
-                    <div class="col-sm-2">
-                       <ul class="nav nav-pills">
-                           <li class="active"><a data-toggle="pill" href="#home" ng-click="setBioPic(-1)">Overview</a></li><br/><br/><br/>
-                           <li><a data-toggle="pill" href="#menu1" ng-bind="mahdi_name" ng-click="setBioPic(0)"></a></li><br/><br/><br/>
-                           <li><a data-toggle="pill" href="#menu2" ng-bind="dustin_name" ng-click="setBioPic(1)"></a></li><br/><br/><br/>
-                           <li><a data-toggle="pill" href="#menu3" ng-bind="felicia_name" ng-click="setBioPic(2)"></a></li><br/><br/><br/>
-                           <li><a data-toggle="pill" href="#menu4" ng-bind="martin_name" ng-click="setBioPic(3)"></a></li>
-                       </ul>
+            <ul class="nav nav-tabs nav-justified">
+                <!--<li class="active"><a data-toggle="tab" href="#about">The Team</a></li>-->
+                <li><a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(0)" ng-bind="mahdi_name"></a></li>
+                <li><a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(1)" ng-bind="dustin_name"></a></li>
+                <li><a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(2)" ng-bind="martin_name"></a></li>
+                <li><a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(3)" ng-bind="felicia_name"></a></li>
+            </ul>
+            <div class="tab-content row">
+                <div id="about" class="tab-pane fade in active">
+                    <div class="col-sm-3 bio_pic_container">
+                        <a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(0)"><img ng-src="{% raw %}{{ mahdi_pic }}{% endraw %}"/></a>
                     </div>
-                    <div class="col-sm-4">
-                        <img class="bio_pic" ng-src="{% raw %}{{ current_bio_pic }}{% endraw %}"/>
-                        <p ng-bind="current_bio_pic"></p>
+                    <div class="col-sm-3 bio_pic_container">
+                        <a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(1)"><img ng-src="{% raw %}{{ dustin_pic }}{% endraw %}"/></a>
                     </div>
-                    <div class="tab-content col-sm-6">
-                        <div id="home" class="tab-pane fade in active">
-                            <h3>HOME</h3>
-                            <p class="bio_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="menu1" class="tab-pane fade">
-                            <h3 ng-bind="mahdi_name"></h3>
-                            <p class="bio_text" ng-bind="mahdi_bio"></p>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                            <h3 ng-bind="dustin_name"></h3>
-                            <p class="bio_text" ng-bind="dustin_bio"></p>
-                        </div>
-                        <div id="menu3" class="tab-pane fade">
-                            <h3 ng-bind="felicia_name"></h3>
-                            <p class="bio_text pre-scrollable" ng-bind="felicia_bio"></p>
-                        </div>
-                        <div id="menu4" class="tab-pane fade">
-                            <h3 ng-bind="martin_name"></h3>
-                            <p class="bio_text" ng-bind="martin_bio"></p>
-                        </div>
+                    <div class="col-sm-3 bio_pic_container">
+                        <a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(2)"><img ng-src="{% raw %}{{ martin_pic }}{% endraw %}"/></a>
+                    </div>
+                    <div class="col-sm-3 bio_pic_container">
+                        <a data-toggle="tab" ng-href="#bio" ng-click="setCurrentBio(3)"><img ng-src="{% raw %}{{ felicia_pic }}{% endraw %}"/></a>
+                    </div>
+                </div>
+                <div id="bio" class="tab-pane fade">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3 bio_pic_container">
+                        <img ng-src="{% raw %}{{ current_bio_pic }}{% endraw %}"/>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-6 bio_text_container">
+                        <p class="pre-scrollable" ng-bind="current_bio_text"></p>
                     </div>
                 </div>
             </div>
@@ -79,7 +73,6 @@
             <div class="row">
                 <h3>Videos -- cycle</h3>
                 <h3>Articles -- links</h3>
-                <h3>Martin</h3>
             </div>
         </div>
     </div>
