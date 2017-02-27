@@ -49,6 +49,23 @@
     margin: 1%;
 }
 
+.color-dark {
+    color: #000000;
+}
+
+.color-light {
+    color: #ffffff;
+}
+
+li {
+    color:#000000;
+}
+
+p {
+    text-align: left;
+    font-size: 1.5em;
+}
+
 h1 {
     letter-spacing: 12px;
     text-align: center;
