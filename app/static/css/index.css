@@ -12,27 +12,71 @@
     display: inline-block;
     padding:1%;
     border-radius: 5px;
-    background-color: rgba(230, 230, 230, 0.4);
+    background-color: rgba(230, 230, 230, 0.0);
 }
 
-.banner_inner_container p {
+.banner_inner_container h5 {
     color: #000000;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.banner_inner_container h4 {
+    color: #000000;
+    font-size: 2em;
 }
 
 .banner_title {
     text-align: center;
     color: #262626;
     font-size: 7em;
-    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+    font-family: "DejaVu Sans Mono";
+    font-weight: 600;
     letter-spacing: 4px;
 }
 
+@media only screen and (max-width: 1300px) {
+    .banner_title {
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .banner_title {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner_title {
+        font-size: 1em;
+    }
+}
+
 .bio_pic_container {
-    padding: 2%;
+    padding: 2% 5% 2% 5%;
 }
 
 .bio_pic_container img {
     width:100%;
+    border-radius: 100px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .bio_pic_container {
+        padding: 2% 5% 2% 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bio_pic_container {
+        padding: 2% 35% 2% 35%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .bio_pic_container {
+        padding: 4% 25% 4% 25%;
+    }
 }
 
 .bio_text_container {
@@ -57,28 +101,64 @@
     color: #ffffff;
 }
 
+.align-center {
+    text-align: center;
+}
+
+.my-container {
+    margin: 2% 25% 2% 25%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .my-container {
+        margin: 2% 20% 2% 20%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .my-container {
+        margin: 2% 10% 2% 10%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .my-container {
+        margin: 2% 2% 2% 2%;
+    }
+}
+
+.separator {
+    margin: 5%;
+}
+
+.subscription {
+    color:#000000;
+}
+
 li {
     color:#000000;
 }
 
-p {
-    text-align: left;
-    font-size: 1.5em;
+li a {
+    color:#ffffff;
+    font-size: 1.3em;
 }
 
 h1 {
     letter-spacing: 12px;
     text-align: center;
+    font-family: Lucida Grande;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.3em;
 }
 
 h1 a {
     letter-spacing: 12px;
     text-align: center;
-}
-
-li a {
-    font-size: 1.5em;
-    color: #ffffff;
+    font-family: Lucida Grande;
 }
 
 .pre-scrollable {

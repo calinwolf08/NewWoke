@@ -6,8 +6,19 @@ function indexController($scope) {
     $scope.bannerImg = "static/images/sun.jpg";
 
     $scope.mahdi_name = "Barwick Mahdi";
-    $scope.mahdi_pic = "static/images/sun.jpg";
-    $scope.mahdi_bio = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah";
+    $scope.mahdi_pic = "static/images/Berwick_Mahdi.jpg";
+    $scope.mahdi_bio = "Berwick Mahdi Davenport is an Infinite-Being, Father, Author of six books, a " +
+        "New Woke Guide, Anti-Racist Organizer and a seasoned Human Performance Specialist/Life Coach " +
+        "with over 25 years of experience.  In addition, he’s been a core-trainer with the People’s Institute " +
+        "for Survival and Beyond for over fifteen years. \n\nBefore Life Coaching was popular, Mahdi was pioneering " +
+        "the field, dating all the way back to 1990 when he first started his life coaching practice.  Since then " +
+        "Mahdi has successfully helped thousands of people own their power, unapologetically and take their " +
+        "rightful place in the world.  He passionately works with people of all races and nationalities who seek " +
+        "to lean into their power and own it. \n\nMahdi enjoys reading, writing, working out, watching movies, " +
+        "being in nature and spending quality time with his three lovely daughters.  Mahdi’s level of " +
+        "intuitive insight, commitment to the liberation of people’s souls, expertise and experiences " +
+        "gives him an extraordinary perspective few coaches, trainers, spiritual guides and leaders possess.  " +
+        "This you discover in only a few moments with Mahdi. ";
     $scope.dustin_name = "Dustin Washington";
     $scope.dustin_pic = "static/images/sun.jpg";
     $scope.dustin_bio = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah";
